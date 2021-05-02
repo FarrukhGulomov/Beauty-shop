@@ -1,0 +1,327 @@
+:root{
+    /*colors*/
+--white:#FFFFFF;    
+--gray: #EFEFEF;
+--accent:#66C05D;
+--dark:#333333;
+--black:#000000;
+}
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src:url('assets/fonts/roboto-v27-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('assets/fonts/roboto-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src:url('assets/fonts/roboto-v27-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('assets/fonts/roboto-v27-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src:url('assets/fonts/roboto-v27-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('assets/fonts/roboto-v27-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+font-style: normal;
+font-weight: 400;  
+font-size: 14px;
+font-family: 'Roboto',sans-serif; 
+background-color: var(--gray);
+color: var(--dark);  
+}
+.bg-white{
+background-color: var(--white);
+}
+.bg-green{
+background-color: var(--accent);
+}
+.container{
+width: 1110px;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;    
+}
+nav{
+padding: 17px 0;
+}
+.nav ul{  
+display: flex;
+justify-content: center;    
+}
+.nav ul li {
+list-style: none; 
+margin: 0 15.8px;   
+}
+.nav ul li a{
+color: var(--dark);
+font-size: 16px;
+text-decoration: none; 
+}
+.nav ul li a:hover{
+color:var(--accent);
+transition:.5s ease;
+-o-transition: .5s;
+-moz-transition: .5s;
+-webkit-transition: .5s;
+}
+header,
+.box, 
+.catalog .publicity,
+.footer-top
+{
+margin: 0 15px;
+}
+.header-top{
+display: flex;
+justify-content: space-between;
+align-items: center;  
+padding-top: 8px; 
+}
+.main-header  .logo{ 
+display: flex;
+align-items: center;
+padding: 15px 0 12px 0;
+}
+.main-header   span,
+.policy{
+display: block;
+}
+.main-header  .logo .logo-text{
+font-size: 36px;
+font-weight: 700;
+color:var(--accent);
+margin-right: 15px;
+margin-left: 15px;
+}
+.header-info, 
+.footer-info{
+display: flex;
+align-items: center;  
+}
+.info-text{
+font-size: 16px;
+margin:0 25px;
+}
+.btn{
+border-radius: 20px;
+cursor: pointer;
+}
+.info-btn{
+padding: 10px 26.4px; 
+display: block;
+border: 2px solid var(--accent);
+background-color: var(--white);
+}
+.info-btn:hover{
+background-color: var(--accent);
+color: var(--white);
+font-weight: 500;
+}
+.btn:hover, .box:hover,
+.policy:hover{
+transition:.5s;
+-o-transition: .5s;
+-moz-transition: .5s;
+-webkit-transition: .5s;
+font-weight: 500;
+}
+.header-bottom{
+padding: 15px 0;
+}
+.border-light{
+border-bottom: 1px solid var(--gray);
+}
+.main-bg{
+position: relative;
+background-image: url('../img/main-bg.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 600px;
+}
+.main-content{
+position: absolute;
+top: 45%;
+transform: translateY(-50%);
+color: var(--white);
+}
+.main-content .title{
+font-size: 48px;
+font-weight: 700;
+
+}
+.main-content p{
+line-height: 20px;
+padding-bottom: 45px;
+}
+.main-btn{
+padding: 10px 46.71px; 
+background-color: transparent;
+border: 2px solid var(--white);
+color:var(--white);
+}
+.main-btn:hover{
+background-color: var(--white);
+color:var(--dark);
+}
+.products-menu{
+padding-top: 50px;
+}
+.catalog .product-title{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin:0 15px;
+padding-bottom: 38px;
+}
+.catalog .product-title .title{
+font-size: 24px;
+font-weight: 700;
+}
+.product-box{
+display: flex;
+align-items: center;
+}
+.box{
+padding: 25px;
+width: 255px; 
+text-align: center;
+border: 1px solid transparent;
+border-radius: 2px;
+max-width: 255px;
+}
+.box:hover{
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border:1px solid var(--dark);
+cursor: pointer;
+}
+.product-text{
+line-height: 20px;
+padding: 20px 0;
+}
+.price-text{
+font-size: 21px;
+font-weight: 500;
+padding-bottom: 20px;
+}
+.buy-btn{
+padding: 7.5px 40.98px;
+border: 2px solid var(--accent);
+background-color: var(--accent);
+color: var(--white);
+}
+.buy-btn:hover, 
+.shop-btn:hover{
+background-color: var(--white);
+color: var(--dark);
+}
+.catalog .publicity{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 100px 0 132px 0;
+}
+.subscribe-content{
+padding: 35px 45px 35px 40px;
+display: flex;
+justify-content: space-between;
+}
+.green-box{
+border: 1px solid #66C05D;
+width: 510px;
+}
+.subscribe-title,
+.shop-title{
+font-size: 16px;
+color: var(--white);
+font-weight: 700;
+}
+.subscribe-text, 
+.shop-text{
+padding: 25px 0;
+line-height: 19.45px;
+color: var(--white);
+}
+.subscribe .input-form{
+padding: 8px 25.5px;
+border-radius: 20px;
+outline: none;
+border: none;
+background-color: var(--white);
+
+
+}
+.input-form:hover{
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.our-shops{
+padding: 35px 45px 35px 40px;
+}
+.shop-text{
+line-height: 19.5px;
+}
+.shop-btn{
+padding: 7px 29px;
+border: 2px solid var(--white);
+background-color: transparent;
+color:var(--white);
+}
+.footer-top{
+background-color: var(--white);
+padding: 37.5px 0;
+}
+.contact-us,
+.footer-bottom{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.social-media{
+display: flex;
+}
+.circle{
+width: 45px;
+height: 45px;
+border-radius:50%;
+border:1px solid var(--accent);
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 10px;
+margin-right: 10px;
+}
+.circle img{  
+display: block;
+}
+.footer-bottom{
+padding: 25.5px 0;
+}
+.text-bottom,
+.policy{
+font-size: 12px;  
+color: #666666;
+}
+.policy{
+text-decoration: none;
+}
+.policy:hover{
+color: var(--accent);
+}
+
+
